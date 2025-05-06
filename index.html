@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Typing Master</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.png">
+    <script src="https://unpkg.com/feather-icons"></script>
+  </head>
+  <body >
+    <div id="wrapper">
+      <nav class="navbar">
+        <a href="index.html""
+          ><img src="./images/logo.png" alt="Typing Master Logo" class="logo"
+        /></a>
+        <ul class="navbar-heading">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="practice.html">Practice</a></li>
+          <li><a href="#about">About</a></li>
+          <li class="mode-toggle" onclick="toggleTheme()">
+            <!-- <span id="theme-text">Dark Mode</span> -->
+            <i id="theme-icon" data-feather="moon" class="light-mode-icon"></i>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- hero section -->
+      <div class="hero-section">
+        <header>
+          <h1>Typing Master</h1>
+          <p>
+            Level up your typing speed and accuracy with real-time performance
+            tracking, and live charts!
+          </p>
+          <button class="start-btn" onclick="testStart()">
+            Start Typing Test
+          </button>
+        </header>
+
+        <div class="features">
+          <div class="feature">
+            <h3>Real-Time WPM</h3>
+            <p>Track your words per minute dynamically as you type.</p>
+          </div>
+          <div class="feature">
+            <h3>Accuracy Insights</h3>
+            <p>See how accurate you are and where you need to improve.</p>
+          </div>
+          <div class="feature">
+            <h3>Live Graph</h3>
+            <p>Visualize your typing performance with interactive charts.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- footer section -->
+    <footer class="site-footer" id="about">
+      <div class="footer-container">
+        <div class="footer-column">
+          <h3>Developer</h3>
+          <p>
+            Created by <strong>Praveen Kumar Rawat</strong><br />
+            B.Tech CSE | Web & AI Enthusiast<br />
+            India
+          </p>
+        </div>
+
+        <div class="footer-column">
+          <h3>Contact</h3>
+          <p>
+            📧 Email:
+            <a href="mailto:praveenkumarrawat.in@gmail.com"
+              >praveenkumarrawat.in@gmail.com</a
+            ><br />
+            🌐 GitHub:
+            <a href="https://github.com/praveenkumarrawat" target="_blank"
+              >github.com/praveenkumarrawat</a
+            ><br />
+            💬 LinkedIn:
+            <a
+              href="https://linkedin.com/in/praveenkumarrawat"
+              target="_blank"
+              >linkedin.com/in/praveenkumarrawat</a
+            >
+          </p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        © 2025 Typing Master | Made with ❤️ by Praveen Kumar Rawat
+      </div>
+    </footer>
+
+    <!-- script here -->
+
+    <script src="script2.js"></script>
+    <script>
+      feather.replace();
+    </script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> -->
+  </body>
+</html>

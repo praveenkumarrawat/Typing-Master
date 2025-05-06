@@ -1,0 +1,430 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "JetBrains Mono", monospace;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  /* background-color: #1e1e1e; */
+  background: #FFFDEC;
+  transition: background 0.3s, color 0.3s;
+  color: #fff;
+  height: 100vh;
+}
+
+#wrapper {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+/* Navigation bar */
+
+.navbar {
+  /* background-color: #1d2e22 ; */
+  background: #86A788;
+  color: #fff;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #424242;
+}
+
+.navbar .logo {
+  width: 30%;
+}
+
+.navbar-heading {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  list-style-type: none;
+}
+
+.navbar-heading li {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.navbar a {
+  /* color: #fdd835; */
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.navbar .navbar-heading a:hover {
+  transform: scale(1.05);
+}
+
+/* hero section for home page */
+
+.hero-section {
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  text-align: center;
+}
+header h1 {
+  font-size: 3rem;
+  color: #000;
+  margin-bottom: 1.5rem;
+}
+
+header p {
+  font-size: 1.2rem;
+  color: #60686c;
+  max-width: 600px;
+}
+.start-btn {
+  margin-top: 2rem;
+  padding: 1rem 2rem;
+  background: #e0556f;
+  color: white;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.start-btn:hover {
+  background: #9c9178;
+}
+.features {
+  margin-top: 4rem;
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.feature {
+  background-color: #1e1e1e;
+  padding: 1.5rem;
+  border-radius: 10px;
+  width: 230px;
+  box-shadow: 0 0 10px rgba(1, 15, 1, 0.5);
+}
+
+.feature:hover{
+  background-color: #302525;
+  box-shadow: 0 0 10px rgba(201, 87, 11, 0.3);
+  transform: translateY(-5px);
+  transition: transform 0.3s ease-in-out;
+}
+
+.feature h3 {
+  color: #81c784;
+  margin-bottom: 0.5rem;
+}
+
+.feature p {
+  font-size: 0.9rem;
+  color: #cfd8dc;
+}
+
+
+/* home page dark theme  */
+body.dark-mode button {
+  background-color: #2196f3;
+}
+
+body.dark-mode button:hover {
+  background-color: #1976d2;
+}
+
+body.dark-mode header h1{
+  color: #fff;
+}
+
+body.dark-mode .feature{
+  color: #fff;
+  box-shadow: 0 0 10px rgba(76, 175, 80, 0.2);
+}
+
+
+/* Light mode icon */
+
+.light-mode-icon {
+  width: 24px;
+  height: 24px;
+  color: white;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.light-mode-icon:hover {
+  transform: rotate(15deg) scale(1.1);
+}
+
+/* typing box css */
+
+.type-box {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* padding: 2rem; */
+  /* margin-top: 2rem; */
+}
+
+.container {
+  width: 100%;
+  max-width: 1024px;
+  background-color: #FFE2E2;
+  color: #000;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.stats {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.stats span {
+  font-weight: bold;
+  color: #e81c43;
+}
+
+.quote {
+  margin: 2rem 0;
+  font-size: 1.3rem;
+  line-height: 1.6;
+  background: #FFCFCF;
+  padding: 1rem;
+  border-left: 4px solid #44b267;
+  border-radius: 5px;
+  min-height: 100px;
+}
+
+textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 1.3rem;
+  background: #FFCFCF;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  resize: none;
+}
+
+.practice-btn {
+  text-align: right;
+  margin-top: 1rem;
+}
+
+.practice-btn {
+  background-color: #44b267;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  margin-left: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background 0.3s ease;
+}
+
+.practice-btn:hover {
+  background-color: #3ca65a;
+}
+
+.result {
+  margin-top: 2rem;
+  display: none;
+}
+
+.result h3 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.result-wrapper {
+  display: flex;
+  justify-content: space-around;
+}
+
+.result-wrapper span {
+  font-weight: bold;
+}
+
+.success {
+  color: #44b267;
+  font-weight: bold;
+
+}
+
+.fail {
+  color: #e81c43;
+  font-weight: bold;
+
+}
+
+
+@media (max-width: 600px) {
+  .container {
+    padding: 1.5rem;
+  }
+
+  .navbar-heading {
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  .result-wrapper {
+    flex-direction: column;
+    gap: 0.5rem;
+    text-align: center;
+  }
+}
+
+/* chart */
+.chart-container {
+  width: 100%;
+  max-width: 600px;
+  height: 300px;
+  margin: 1.5rem auto;
+  /* background-color: #EEEEEE; */
+}
+#liveStats {
+  font-size: 1.2rem;
+  color: #eee;
+}
+
+canvas {
+  background-color: #393030;
+  border-radius: 12px;
+  box-shadow: 0 0 12px rgba(76, 175, 80, 0.2), 0 0 12px rgba(33, 150, 243, 0.2);
+}
+
+
+/* footer */
+/* footer.css */
+/* footer{
+  margin-top: 10px;
+} */
+.site-footer {
+  background-color: #1a1a1a;
+  color: #ccc;
+  padding: 2rem 1rem;
+  margin-top: auto;
+  font-size: 0.9rem;
+  width: 100%;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  /* gap: 2rem; */
+}
+
+.footer-column {
+  /* max-width: 450px; */
+  line-height: 1.6;
+}
+
+.footer-column h3 {
+  color: #4caf50;
+  margin-bottom: 0.8rem;
+}
+
+.footer-column a {
+  color: #90caf9;
+  text-decoration: none;
+}
+
+.footer-column a:hover {
+  text-decoration: underline;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 0.8rem;
+  color: #777;
+}
+
+
+
+
+/* Dark Mode Styles */
+body.dark-mode {
+  background-color: #1d221e;
+  color: #fff;
+}
+
+body.dark-mode .navbar {
+  background-color: #32012f;
+  color: #fff;
+  border-bottom: 1px solid #424242;
+}
+
+body.dark-mode .navbar a {
+  color: #fff;
+}
+
+body.dark-mode .navbar a:hover {
+  color: #ffffff;
+}
+
+body.dark-mode .container {
+  background-color: #e2dfd0;
+  color: #000;
+  box-shadow: 0 0 10px rgba(248, 248, 248, 0.553);
+}
+
+body.dark-mode .quote {
+  background: #fff;
+  border-left: 4px solid #44b267;
+}
+
+body.dark-mode textarea {
+  background-color: #fff;
+  /* color: #fdd835; */
+  border: 1px solid #ccc;
+}
+
+body.dark-mode .practice-btn {
+  background-color: #44b267;
+}
+body.dark-mode .practice-btn:hover {
+  background-color: #3ca65a;
+}
+
+
+body.dark-mode .success {
+  color: rgb(57, 219, 57);
+  font-weight: bold;
+}
+
+body.dark-mode .fail {
+  color: red;
+  font-weight:900;
+
+}
+
+body.dark-mode .light-mode-icon {
+  color: #fff;
+}
+
+/* dark mode for chart */
