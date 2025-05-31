@@ -27,8 +27,6 @@ Typing Master is a web-based application designed to help users improve their ty
 
 ## 📷 Project Output Screenshots
 
-> Add your screenshots in the `assets/screenshots/` folder and reference them here like below.
-
 ### 🧪 Typing Master - Home Page
 ![HomePage](assets/homePage.png)
 
