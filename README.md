@@ -2,6 +2,7 @@
 
 Typing Master is a web-based application designed to help users improve their typing speed and accuracy through interactive typing tests. It offers real-time feedback on performance, visual error tracking, and a graphical analysis of typing progress.
 
+🌐 **Live Demo:** [Click here to try it out!](https://praveenkumarrawat.github.io/Typing-Master/index.html)
 ---
 
 ## 🚀 Features
